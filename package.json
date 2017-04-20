@@ -1,0 +1,11 @@
+{
+  "name": "UI-DNA-DOC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nullice/UI-DNA-DOC.git",
+  "author": "nullice",
+  "license": "MIT",
+  "scripts": {
+    "start": "docsify serve docs"
+  }
+}
