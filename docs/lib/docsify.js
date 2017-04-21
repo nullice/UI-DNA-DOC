@@ -1,5 +1,8 @@
 (function () {
 'use strict';
+var _now = new Date()
+var GET_URL_END ="?"+_now.getFullYear()+"_"+_now.getMonth()+"_"+_now.getDate()
+GET_URL_END +="v1"
 
 /**
  * Create a cached version of a pure function.
@@ -632,7 +635,7 @@ function get (url, hasBar) {
     return { then: function (cb) { return cb(cache[url]); }, abort: noop }
   }
 
-  xhr.open('GET', url);
+  xhr.open('GET', url+GET_URL_END);
   xhr.send();
 
   return {
