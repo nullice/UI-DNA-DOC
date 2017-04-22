@@ -5,7 +5,8 @@ const axios = require("axios")
 
 
 var SCAN_PATH = path.join(__dirname, "docs")
-var GIT_URL = "http://ui-dna.doc.design-enzyme.com"
+// var GIT_URL = "http://ui-dna.doc.design-enzyme.com"
+var GIT_URL = "http://doc.design-enzyme.com"
 var NOTSCAN = /^node_modules/
 
 

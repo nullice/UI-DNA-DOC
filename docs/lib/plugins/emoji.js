@@ -151,9 +151,21 @@ var AllGithubEmoji = ['+1', '100', '1234', '8ball', 'a', 'ab', 'abc', 'abcd',
 // emoji from All-Github-Emoji-Icons
 // https://github.com/scotch-io/All-Github-Emoji-Icons
 window.emojify = function (match, $1) {
-  return AllGithubEmoji.indexOf($1) === -1
-    ? match
-    : '<img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/' + $1 + '.png" alt="' + $1 + '" />'
+  
+
+if(  AllGithubEmoji.indexOf($1) === -1)
+{
+  return  '<img class="emoji" src="https://cdn.staticfile.org/twemoji/2.2.5/2/svg/' + $1.replace(/_/,"-") + '.svg" alt="' + $1 + '" />'
+}else {
+
+  return '<img class="emoji" src="https://cdn.staticfile.org/emoji-cheat-sheet/1.0.0/' + $1 + '.png" alt="' + $1 + '" />'
+}
+
+
+//https://cdn.staticfile.org/twemoji/2.2.5/16x16/1f0cf.png
+    // : '<img class="emoji" src="https://assets-cdn.github.com/images/icons/emoji/' + $1 + '.png" alt="' + $1 + '" />'
+
+
 };
 
 }());
