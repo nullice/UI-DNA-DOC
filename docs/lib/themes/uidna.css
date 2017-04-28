@@ -59,6 +59,10 @@ body{font-family:"Microsoft YaHei","微软雅黑","PingFang SC","Hiragino Sans G
 
 }
 
+.markdown-section p.tip, .markdown-section tr:nth-child(2n) {
+    background-color: #fbfbfb;
+}
+
 /*.markdown-section h1 a , .markdown-section h2 a, .markdown-section h3 a, .markdown-section h4 a, .markdown-section h5 a, .markdown-section h6 a{
 	font-family: inherit;
 	font-weight: lighter;
