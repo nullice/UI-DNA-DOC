@@ -27,12 +27,12 @@
     text-decoration: none;
   }
 .markdown-section   a:hover {
-
   border-bottom: 1px solid;
   padding-bottom: 3px;
   text-decoration: none;
-
 }
+
+
 
 
 
@@ -102,4 +102,34 @@ h2{
 /*.markdown-section h1 a , .markdown-section h2 a, .markdown-section h3 a, .markdown-section h4 a, .markdown-section h5 a, .markdown-section h6 a{
 	font-family: inherit;
 	font-weight: lighter;
+}*/
+
+
+
+
+.markdown-section h1 a:hover, 
+.markdown-section h2 a:hover,
+.markdown-section h3 a:hover,
+.markdown-section h4 a:hover
+{
+    border: none;
+    padding-bottom: 0;
+   
+}
+
+
+.markdown-section  h1 a.anchor span {
+        color: #4937cc;
+}
+
+.sidebar ul li a {
+    color: #505d6b;
+    font-size: 15px;
+}
+
+/*
+.sidebar ul li.active>a
+{
+    background: rgba(86, 68, 224, 0.08);
+    padding: 4px 4px;
 }*/
